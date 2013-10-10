@@ -1,0 +1,157 @@
+.display-mini{
+display:inherit !important;
+}
+
+body{
+background-image:url("img/trans.png");
+}
+#prin {
+  width:470px;
+position: relative;
+z-index: 1;
+
+ } 
+ 
+ body{
+ background-color:#000000;
+background-image:url(img/trans.png);
+
+ 
+ }
+
+ #prin #sub {
+  height:64px;
+  border-bottom:1px solid #000;
+position:relative;
+z-index: 1;
+	
+
+ } 
+
+ #prin #sub ul {
+  list-style:none;
+position: relative;
+position:relative;
+z-index: 1;
+ } 
+
+ #prin #sub ul li a { 
+  text-decoration:none;
+  float:left;
+  margin-right:3px;
+  line-height:20px;
+  font-family:"Arial Black", Gadget, sans-serif;
+  color:#000;
+  border:1px solid #000;
+  border-bottom:none;
+  padding:20px;
+  width:30px;
+  text-align:left;
+  background:#69F;
+  -moz-border-radius-topleft:15px;
+  -moz-border-radius-topright:15px;
+  -webkit-border-top-left-radius:15px;
+  -webkit-border-top-right-radius:15px; 
+  font-size:9px;
+  height:5px;
+ } 
+
+ #prin #sub ul li a:hover {
+  background:#F90;
+  color:#FFF;
+  text-shadow:1px 1px 1px #000;
+ } 
+ 
+ #prin ul li a#onlink {
+  background:#FFF;
+  color:#000;
+  border-bottom:1px solid #FFF; 
+ } 
+
+ #sub ul li a#onlink:hover {
+  background:#FFF;
+  color:#69F;
+  text-shadow:1px 1px 1px #000; 
+ }
+ 
+ #sub li a#current {
+ background: #FFF;
+color: #000;
+border-bottom: 1px solid #fff;
+text-align:left;
+}
+
+
+
+
+
+
+
+#contenido{
+margin-top: 80px;
+border-radius:5px 5px 5px 5px;
+background-color:#F6FEEE;
+width:400px;
+height:200px;
+border:2px solid #22EC8A;
+}
+
+
+#ifr{
+
+width:800px;
+height:500px;
+
+
+}
+
+
+
+#formulario{
+height:30px;
+width:150px;
+background-color:#DBDCE7;
+border-radius:3px 3px 3px 3px;
+border:1px solid #000000;
+
+}
+
+#formulario:hover{
+background-color:#A0F154;
+}
+
+#tabla:hover{
+background-color:#2EAAFC;
+cursor:pointer;
+}
+
+#catalogo{
+margin-left:-172px;
+height:145px;
+width:1000px;
+}
+
+/*adaptativo del banner*/
+
+#anuncios > img   {
+	-webkit-transition-property: opacity;
+	-webkit-transition-duration: 3s;
+	-moz-transition-property: opacity;
+	-moz-transition-duration: 3s;
+	position: absolute;
+	width: 435px;
+	height: 69px;
+	margin: auto;
+	left: -230px;
+	top: 1px;
+		
+			}
+img.fade-out{opacity:0}
+img.fade-in{opacity:1}
+
+#banner{
+	display: table-caption ;
+	position: relative;
+
+	
+	}

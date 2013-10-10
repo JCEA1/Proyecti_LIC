@@ -1,0 +1,45 @@
+<html>
+<head>
+<link rel="stylesheet" href="Estilos/anuncio.css" type="text/css">
+</head>
+<body>
+
+<!-- div que guarda a las imagenes que se muestran en el slide-->
+<div id="anuncios">
+<img src="img/imagen01.jpg"/>
+<img src="img/imagen02.jpg"/>
+<img src="img/imagen03.jpg"/>
+</div>
+
+<script>
+var interval = 4 * 20; // Segundos que tardar en cambiar de una foto a otra
+var images = document.getElementsByTagName("img");
+var imageArray = [];
+var imageCount = images.length;
+var current = 0;
+//esta variable crea una funcion la cual hace que se muestren las imagenes en forma aleatoria
+var randomize = function(){
+return (Math.round(Math.random() * 3 - 1.5));
+}
+for(var i = 0; i < imageCount; i++){
+images[i].className = 'fade-out';
+imageArray[i] = images[i];
+}
+imageArray.sort(randomize);
+
+var fade = function(){
+
+imageArray[current++].className = 'fade-out';
+if(current == imageCount){
+current = 0;
+imageArray.sort(randomize);
+}
+// en cada fade-in se llaman los efectos que se asignaron en la pagina css
+imageArray[current].className = 'fade-in';
+
+setTimeout(fade, interval * 100);
+};
+fade();
+</script>
+</body>
+</html>

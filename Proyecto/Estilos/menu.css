@@ -1,0 +1,126 @@
+body{
+background-image:url("img/trans.png");
+}
+#prin {
+  width:660px;
+
+
+ } 
+ 
+ body{
+ background-color:#000000;
+background-image:url(img/trans.png);
+
+ 
+ }
+
+ #prin #sub {
+  height:64px;
+  border-bottom:1px solid #000;
+  width:630px; 	
+  padding-left:25px; 
+ } 
+
+ #prin #sub ul {
+  list-style:none;
+  margin:0;
+  padding:0; 
+ } 
+
+ #prin #sub ul li a { 
+  text-decoration:none;
+  float:left;
+  margin-right:5px;
+  line-height:23px;
+  font-family:"Arial Black", Gadget, sans-serif;
+  color:#000;
+  border:1px solid #000;
+  border-bottom:none;
+  padding:20px;
+  width:75px;
+  text-align:center;
+  display:block;
+  background:#69F;
+  -moz-border-radius-topleft:15px;
+  -moz-border-radius-topright:15px;
+  -webkit-border-top-left-radius:15px;
+  -webkit-border-top-right-radius:15px; 
+ } 
+
+ #prin #sub ul li a:hover {
+  background:#F90;
+  color:#FFF;
+  text-shadow:1px 1px 1px #000;
+ } 
+ 
+ #prin ul li a#onlink {
+  background:#FFF;
+  color:#000;
+  border-bottom:1px solid #FFF; 
+ } 
+
+ #sub ul li a#onlink:hover {
+  background:#FFF;
+  color:#69F;
+  text-shadow:1px 1px 1px #000; 
+ }
+ 
+ #sub li a#current {
+ background: #FFF;
+color: #000;
+border-bottom: 1px solid #fff;
+text-align: center;
+}
+
+
+
+
+
+
+
+#contenido{
+border-radius:5px 5px 5px 5px;
+background-color:#F6FEEE;
+width:1000px;
+height:800px;
+border:2px solid #22EC8A;
+}
+
+
+#ifr{
+
+width:1000px;
+height:700px;
+
+}
+
+#de{
+
+
+}
+
+#formulario{
+height:30px;
+width:150px;
+background-color:#DBDCE7;
+border-radius:3px 3px 3px 3px;
+border:1px solid #000000;
+
+}
+
+#formulario:hover{
+background-color:#A0F154;
+}
+
+#tabla:hover{
+background-color:#2EAAFC;
+cursor:pointer;
+}
+
+#catalogo{
+margin-left:-172px;
+height:145px;
+width:1000px;
+}
+
+

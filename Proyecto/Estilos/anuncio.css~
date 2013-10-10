@@ -1,0 +1,23 @@
+#anuncios > img   {
+	-webkit-transition-property: opacity;
+	-webkit-transition-duration: 3s;
+	-moz-transition-property: opacity;
+	-moz-transition-duration: 3s;
+	position: absolute;
+	width: 1001px;
+	height: 196px;
+	margin: auto;
+	left: -450px;
+	top: 1px;
+		
+			}
+
+img.fade-out{opacity:0}
+img.fade-in{opacity:1}
+
+#banner{
+	display: table-caption ;
+	position: relative;
+
+	
+	}

@@ -1,0 +1,36 @@
+
+.imagpl{ /* Recipiente de imagen principal */
+position: relative;
+z-index: 1;
+width: 70px;
+height: 70px;
+}
+
+.imagpl #imh{ /* CSS para una imagen dentro del contenedor */
+position: relative;
+z-index: 2;
+-moz-transition: all 0.5s ease; /* Activar CSS3 transicion en todos los apoyos */
+-webkit-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;
+}
+
+.imagpl:hover #imh{/* CSS para una imagen cuando se pasa el cursor sobre contenedor principal */
+-moz-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+-webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+-moz-transform: scale(1.05, 1.05);
+-webkit-transform: scale(1.05, 1.05);
+-ms-transform: scale(1.05, 1.05);
+-o-transform: scale(1.05, 1.05);
+transform: scale(1.05, 1.05);
+}
+
+.img{
+width: 250px;
+height: 250px;
+margin: 35px ;	
+	}
+
+

@@ -1,0 +1,16 @@
+#anuncios > img   {
+/*estilos utilizados en el slide la cual ocupa una propiedad llamada transition que es parte de css3 y el efecto de opacidad*/
+			-webkit-transition-property:opacity;
+			-webkit-transition-duration: 3s;
+			-moz-transition-property:opacity;
+			-moz-transition-duration: 3s;
+			position:absolute;
+			width: 320px;
+			height:auto;
+			display: inline-block;			
+			margin-left: -150px;
+			margin-top: 20px;
+			border: 1px solid #000000;
+-moz-border-radius: 7px;
+-webkit-border-radius: 7px;
+			}

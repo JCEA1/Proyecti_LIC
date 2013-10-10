@@ -1,0 +1,51 @@
+.tbl{
+height:20em;	
+width: 60em;
+text-align:center;
+	}
+
+
+.btn{
+height: 4em;
+width: 8em;	
+margin-left:  -8em;
+background:linear-gradient(white -10%,#2E64FE);
+border-radius:5px;
+border-color: #2E64FE;
+/*font-family:"Franklin Gothic Demi";*/
+font-family:"Franklin Gothic Demi";
+	}
+	
+
+
+body{
+background: -webkit-linear-gradient(top, 
+rgba(30,87,153,0) 0%,
+rgba(30,87,153,0.8) 15%,
+rgba(30,87,153,1) 19%,
+rgba(30,87,153,1) 20%,
+rgba(41,137,216,1) 50%,
+rgba(30,87,153,1) 80%,
+rgba(30,87,153,1) 81%,
+rgba(30,87,153,0.8) 85%,
+rgba(30,87,153,0) 100%); 
+/* Chrome10+,Safari5.1+ */
+	
+	}
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedbe9', endColorstr='#26558b',GradientType=0 ); /* IE6-9 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

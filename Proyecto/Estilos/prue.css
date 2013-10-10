@@ -1,0 +1,137 @@
+img{
+width: 250px;
+height: 200px;	
+	margin-top: 5px;
+	}
+
+
+.ps{
+font-size:20px;
+font-family:"Franklin Gothic Demi";
+text-align:center;
+}
+.pa{
+font-family:"Franklin Gothic Demi";
+text-align:center;
+}
+
+.medio{
+	background-color: violet;
+
+	}
+	
+#ecomoda{
+	width: 27em;
+	}
+#eco{
+width: 30em;	
+	
+	}
+.redondear{
+width: 20em;	
+height: 20em;	
+background-color: #854689;
+	}
+
+div.desple { /* Envoltorio principal de empuje hacia abajo del panel */
+		position: relative;
+		margin: 0;
+		margin-bottom: 1em; /* El margen con el descanso de los contenidos de la página */
+		}
+
+
+div.desple > div { /* Contenido DIV DIV dentro envoltorio */
+		height: 10px; /* Altura inicial de contenido cuando oculta. Debe ser la misma altura que la barra inferior (ver div.css3droppanel:after) */
+		padding: 5px;
+		-moz-box-sizing: border-box; /* Asegurar cualquier relleno y de la frontera declarada dentro de DIV contenido no aumenta las dimensiones declaradas de DIV */
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		overflow: hidden;
+		background: #b5e5ef; /* Fondo de DIV contenido */
+		position: relative;
+		opacity: 0;
+    -moz-transition: all 0.2s ease-in-out 0.1s;  /* CSS3 transición del estado de UL. Última 0.1s especifica retraso antes de la animación */
+    -o-transition: all 0.2s ease-in-out 0.1s; /* En lugar de facilitar-in-out, también tratar cúbicas Bézier (0,25, 0,1, 0,25, 1,4) en vez */
+    -webkit-transition: all 0.2s ease-in-out 0.1s;
+    transition: all 0.2s ease-in-out 0.1s;
+	font-family:"Century Gothic";
+		}
+
+div.desple:after { /* Añadir barra inferior debajo envoltorio */
+		content: '';
+		display: block;
+		bottom: 0;
+		position: absolute;
+		width: 100%;
+		height: 10px;
+		box-shadow: 0 3px 8px gray, 3px 3px 4px brown inset;
+		background: #5a1619; /* El fondo oscuro rojizo y sus versiones gradiente */
+		background: -moz-linear-gradient(top,  rgba(118,36,41,1) 0%, rgba(117,5,11,1) 50%, rgba(56,38,39,0.72) 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(118,36,41,1)), color-stop(50%,rgba(117,5,11,1)), color-stop(100%,rgba(56,38,39,0.72)));
+		background: -webkit-linear-gradient(top,  rgba(118,36,41,1) 0%,rgba(117,5,11,1) 50%,rgba(56,38,39,0.72) 100%);
+		background: -o-linear-gradient(top,  rgba(118,36,41,1) 0%,rgba(117,5,11,1) 50%,rgba(56,38,39,0.72) 100%);
+		background: -ms-linear-gradient(top,  rgba(118,36,41,1) 0%,rgba(117,5,11,1) 50%,rgba(56,38,39,0.72) 100%);
+		background: linear-gradient(to bottom,  rgba(118,36,41,1) 0%,rgba(117,5,11,1) 50%,rgba(56,38,39,0.72) 100%);
+		}
+
+
+div.desple input[type="checkbox"] { /* Estilo elemento casilla invisible utiliza para cambiar el estado de empuje hacia abajo del panel */
+		position: absolute;
+		right: 50px; /* Posición derecha de casilla */
+		width: 60px; /* Ancho de casilla */
+		height: 42px; /* Altura de casilla */
+		bottom: -34px; /* Desplazamiento inferior de la casilla de verificación */
+		z-index: 10;
+		cursor: pointer;
+		opacity: 0;
+		}
+
+div.desple input[type="checkbox"]:checked ~ div { /* Cuando se comprueba casilla, ampliar el contenido dentro de envoltorio */
+		height: 150px; /* Altura de contenidos para ampliar a. Barra de desplazamiento aparecerá si se desborda contenido de esta altura */
+		opacity: 1;
+		overflow: auto;
+		}
+
+div.desple label { /* Etiqueta de estilo que se coloca debajo de la barra inferior de la envoltura, y se alternará casilla si interactuaba con */
+		position: absolute;
+		right: 50px; /* Posición de la derecha de la etiqueta */
+		width: 60px; /* Ancho de etiqueta */
+		height: 42px; /* La altura de la etiqueta */
+		bottom: -34px; /* Desplazamiento inferior de la etiqueta */
+		border-bottom-left-radius: 30px;
+		border-bottom-right-radius: 30px;
+		cursor: pointer;
+		z-index: 5;
+		background: #5a1619; /* El fondo oscuro rojizo y sus versiones gradiente */
+		background: -moz-linear-gradient(top,  rgba(118,36,41,1) 0%, rgba(117,5,11,1) 50%, rgba(124,31,32,0.72) 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(118,36,41,1)), color-stop(50%,rgba(117,5,11,1)), color-stop(100%,rgba(124,31,32,0.72)));
+		background: -webkit-linear-gradient(top,  rgba(118,36,41,1) 0%,rgba(117,5,11,1) 50%,rgba(124,31,32,0.72) 100%);
+		background: -o-linear-gradient(top,  rgba(118,36,41,1) 0%,rgba(117,5,11,1) 50%,rgba(124,31,32,0.72) 100%);
+		background: -ms-linear-gradient(top,  rgba(118,36,41,1) 0%,rgba(117,5,11,1) 50%,rgba(124,31,32,0.72) 100%);
+		background: linear-gradient(to bottom,  rgba(118,36,41,1) 0%,rgba(117,5,11,1) 50%,rgba(124,31,32,0.72) 100%);
+		box-shadow: 0 3px 8px black, 
+					5px 5px 6px brown inset,
+					0 -3px 3px rgba(152,41,47,0.7) inset,
+					0 5px 0 rgba(255,255,255,0.7) inset;
+		}
+
+div.desple label:hover { /* Estilo de etiqueta cuando rueda del ratón sobre él */
+		box-shadow: 0 3px 8px black, 5px 5px 6px brown inset, 
+					0 -3px 3px rgba(152,41,47,0.7) inset, 
+					0 5px 0 rgba(255,255,255,0.7) inset, 
+					0 0 15px rgba(255,255,255,0.8) inset;
+		}
+
+div.desple label:after { /* Genera la flecha hacia abajo */
+		content: '';
+		position: absolute;
+		display: block;
+		width: 0;
+		height: 0;
+		border: 12px solid transparent;
+		border-color: white transparent transparent transparent;
+		top: 18px;
+		left: 18px;
+		box-shadow: 0 0 7px gray inset;
+		}
+
